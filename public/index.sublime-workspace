@@ -1,0 +1,212 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\n\nuse Illuminate\\Contracts\\Http\\Kernel;\nuse Illuminate\\Http\\Request;\n\ndefine('LARAVEL_START', microtime(true));\n\n/*\n|--------------------------------------------------------------------------\n| Check If Application Is Under Maintenance\n|--------------------------------------------------------------------------\n|\n| If the application is maintenance / demo mode via the \"down\" command we\n| will require this file so that any prerendered template can be shown\n| instead of starting the framework, which could cause an exception.\n|\n*/\n\nif (file_exists(__DIR__.'/../storage/framework/maintenance.php')) {\n    require __DIR__.'/../storage/framework/maintenance.php';\n}\n\n/*\n|--------------------------------------------------------------------------\n| Register The Auto Loader\n|--------------------------------------------------------------------------\n|\n| Composer provides a convenient, automatically generated class loader for\n| this application. We just need to utilize it! We'll simply require it\n| into the script here so we don't need to manually load our classes.\n|\n*/\n\nrequire __DIR__.'/../vendor/autoload.php';\n\n/*\n|--------------------------------------------------------------------------\n| Run The Application\n|--------------------------------------------------------------------------\n|\n| Once we have the application, we can handle the incoming request using\n| the application's HTTP kernel. Then, we will send the response back\n| to this client's browser, allowing them to enjoy our application.\n|\n*/\n\n$app = require_once __DIR__.'/../bootstrap/app.php';\n\n$kernel = $app->make(Kernel::class);\n\n$response = tap($kernel->handle(\n    $request = Request::capture()\n))->send();\n\n$kernel->terminate($request, $response);\n",
+			"file": "index.php",
+			"file_size": 1731,
+			"file_write_time": 132530383115442005,
+			"settings":
+			{
+				"buffer_size": 1731,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 131.199996948,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1731,
+								1731
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 282.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

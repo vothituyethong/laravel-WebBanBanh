@@ -10,7 +10,7 @@
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="{{URL::to('index')}}">TRANG CHỦ</a>
 						<i>|</i>
 					</li>
 					<li>LIÊN HỆ</li>
@@ -36,7 +36,7 @@
 							<i class="fas fa-map-marker-alt rounded-circle"></i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Địa chỉ</h4>
-						<p>123 phường Bến Nghé, quận 1, Tp.HCM
+						<p>273 An Dương Vương, P.3, Q.5, TP.HCM
 							
 						</p>
 					</div>
@@ -47,7 +47,7 @@
 							<i class="fas fa-phone rounded-circle"></i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Điện thoại</h4>
-						<p>+(84) 121 121 121
+						<p>0908.412.214
 							
 						</p>
 					</div>
@@ -59,7 +59,7 @@
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Email</h4>
 						<p>
-							<a href="mailto:info@example.com">info@example1.com</a>
+							<a href="mailto:info@example.com">h_bakery@gmail.com</a>
 						
 						</p>
 					</div>
@@ -73,39 +73,5 @@
 	</div>
 	<!-- //map -->
 
-	<!-- middle section -->
-	<div class="join-w3l1 py-sm-5 py-4">
-		<div class="container py-xl-4 py-lg-2">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="join-agile text-left p-4">
-						<div class="row">
-							<div class="col-sm-7 offer-name">
-								<h6>Smooth, Rich & Loud Audio</h6>
-								<h4 class="mt-2 mb-3">Branded Headphones</h4>
-								<p>Sale up to 25% off all in store</p>
-							</div>
-							<div class="col-sm-5 offerimg-w3l">
-								<img src="images/off1.png" alt="" class="img-fluid">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 mt-lg-0 mt-5">
-					<div class="join-agile text-left p-4">
-						<div class="row ">
-							<div class="col-sm-7 offer-name">
-								<h6>A Bigger Phone</h6>
-								<h4 class="mt-2 mb-3">Smart Phones 5</h4>
-								<p>Free shipping order over $100</p>
-							</div>
-							<div class="col-sm-5 offerimg-w3l">
-								<img src="images/off2.png" alt="" class="img-fluid">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 @stop

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 04, 2021 lúc 03:41 AM
+-- Thời gian đã tạo: Th12 05, 2021 lúc 01:54 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -48,7 +48,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `password`, `hoten`, `diachi`, `sdt`, `email`, `loai`, `trangthai`, `status`, `email_verified_at`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, '202cb962ac59075b964b07152d234b70', 'Ngô Huỳnh Thanh Duy', 'Q TD', '0374572711', 'admin@gmail.com', 'admin', 'active', 1, NULL, NULL, NULL, NULL),
+(1, '202cb962ac59075b964b07152d234b70', 'Nguyễn Văn A', 'Q TD', '0374572711', 'admin@gmail.com', 'admin', 'active', 1, NULL, NULL, NULL, NULL),
 (6, 'e10adc3949ba59abbe56e057f20f883e', 'Ngô Huỳnh Thanh Duy', 'Q TD', '0374572711', 'ngoduy3110@gmail.com', 'admin', 'active', 0, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -116,7 +116,8 @@ CREATE TABLE `hoadon` (
 
 INSERT INTO `hoadon` (`id`, `user_id`, `hoten`, `sdt`, `diachi`, `thanhtien`, `trangthai`, `created_at`, `updated_at`) VALUES
 (13, 20, 'Ngô Huỳnh Thanh Duy', 374572711, '558- 560 Tỉnh Lộ 10, phường Bình Trị Đông, quận Bình Tân, Hồ Chí Minh', 9990000, 1, NULL, NULL),
-(16, NULL, 'Ngô Huỳnh Thanh Duy', 374572711, '558- 560 Tỉnh Lộ 10, phường Bình Trị Đông, quận Bình Tân, Hồ Chí Minh', 3490000, 1, NULL, NULL);
+(16, NULL, 'Ngô Huỳnh Thanh Duy', 374572711, '558- 560 Tỉnh Lộ 10, phường Bình Trị Đông, quận Bình Tân, Hồ Chí Minh', 3490000, 1, NULL, NULL),
+(17, NULL, 'ABC', 123456789, '123 MMM', 340000, 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -138,10 +139,10 @@ CREATE TABLE `loaisp` (
 --
 
 INSERT INTO `loaisp` (`id`, `tenloai`, `nhacungcap`, `trangthai`, `created_at`, `updated_at`) VALUES
-(1, 'Smartphone Samsung', 1, '1', '2020-12-30 07:12:50', '2020-12-30 07:12:50'),
-(2, 'IPhone', 2, '1', '2020-12-30 07:13:26', '2020-12-30 07:13:26'),
-(3, 'Xiaomi', 3, '1', '2020-12-30 07:13:46', '2020-12-30 07:13:46'),
-(4, 'Oppo', 4, '1', '2020-12-30 07:13:56', '2020-12-30 07:13:56');
+(1, 'Bánh Phô mát', 1, '1', '2020-12-30 07:12:50', '2020-12-30 07:12:50'),
+(2, 'Bánh Gato', 2, '1', '2020-12-30 07:13:26', '2020-12-30 07:13:26'),
+(3, 'Cupcake', 3, '1', '2020-12-30 07:13:46', '2020-12-30 07:13:46'),
+(4, 'Donut', 4, '1', '2020-12-30 07:13:56', '2020-12-30 07:13:56');
 
 -- --------------------------------------------------------
 
@@ -224,7 +225,7 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`id`, `TenSP`, `Gia`, `GiaMoi`, `Image`, `Size`, `SoLuong`, `Mota`, `TrangThai`, `created_at`, `updated_at`, `MaLoai`, `DanhMuc`) VALUES
-(1, 'Bánh phô mát dâu ', 75000, 65000, 'chck3.jpg', 'tam giác - 7cm*12cm', 100, 'Nhấm nháp mẩu bánh phô mát dâu tây bạn sẽ cảm nhận trọn vẹn mùi vị chua ngọt đặc trưng của loại quả này và đặc biệt hơn khi nó đi kèm với vị béo của phô mát.', 1, '2021-10-30 07:21:06', '2021-10-30 07:25:17', 1, 1),
+(1, 'Bánh phô mát dâu', 75000, 65000, 'chck3.jpg', 'tam giác - 7cm*12cm', 100, 'Nhấm nháp mẩu bánh phô mát dâu tây bạn sẽ cảm nhận trọn vẹn mùi vị chua ngọt đặc trưng của loại quả này và đặc biệt hơn khi nó đi kèm với vị béo của phô mát.', 1, '2021-10-30 07:21:06', '2021-12-05 03:36:29', 1, 1),
 (2, 'Bánh phô mát sô-cô-la', 500000, 450000, 'chck9.jpg', '32cm*5cm', 100, 'Màu sắc trang trọng, vẻ bóng bẩy của sô cô la, cùng những họa tiết đặc sắc từ bàn tay khéo léo của người thợ bánh khiến chiếc bánh trở thành món quà lịch thiệp nhất để gửi tặng bạn bè vào những dịp đặc biệt', 1, '2021-10-30 07:24:30', '2021-10-30 07:24:30', 2, 2),
 (3, 'Bánh phô mát mận', 70000, 60000, 'chck6.jpg', 'tam giác 7cm*12cm', 10, 'Chiếc bánh phô mát đi kèm với mùi mứt mận chua ngọt', 1, '2021-10-30 07:26:34', '2021-10-30 07:26:34', 1, 1),
 (4, 'Bánh phô mát hương mâm xôi', 80000, 75000, 'chck7.jpg', 'tam giác - 7cm*12cm', 10, 'Những quả mâm xôi chín mọng căng đều tô điểm cho chiếc bánh phô mát thêm phầm hấp dẫn', 1, '2021-10-30 07:28:30', '2021-10-30 07:28:30', 1, 1),
@@ -385,7 +386,7 @@ ALTER TABLE `danhmuc`
 -- AUTO_INCREMENT cho bảng `hoadon`
 --
 ALTER TABLE `hoadon`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT cho bảng `loaisp`

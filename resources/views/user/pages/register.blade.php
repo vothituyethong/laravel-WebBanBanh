@@ -5,7 +5,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Register</h5>
+					<h5 class="modal-title">Đăng ký</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -45,7 +45,7 @@
 							<input type="email" class="form-control" placeholder=" " name="Email" required="">
 						</div>
 						<div class="form-group">
-							<label class="col-form-label">Password</label>
+							<label class="col-form-label">Mật khẩu</label>
 							<input type="password" class="form-control" placeholder=" " name="Password" id="password1" required="">
 							<input type="hidden" class="form-control" placeholder=" " name="Loai" id="password1" required="">
 							<input type="hidden" class="form-control" placeholder=" " name="TrangThai" id="password1" required="">
@@ -53,12 +53,12 @@
 						
 						
 						<div class="right-w3l">
-							<input type="submit" class="form-control" value="Register">
+							<input type="submit" class="form-control" value="Đăng ký">
 						</div>
 						<div class="sub-w3l">
 							<div class="custom-control custom-checkbox mr-sm-2">
 								<input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
-								<label class="custom-control-label" for="customControlAutosizing2">I Accept to the Terms & Conditions</label>
+								<label class="custom-control-label" for="customControlAutosizing2">Tôi đồng ý các chính sách của cửa hàng.</label>
 							</div>
 						</div>
 						{{csrf_field()}}

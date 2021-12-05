@@ -10,7 +10,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="index.html">Trang Chủ</a>
+                    <a href="{{URL::to('index')}}">Trang Chủ</a>
                     <i>|</i>
                 </li>
                 <li>Trang Sản Phẩm</li>
@@ -84,7 +84,7 @@
             </div>
             <!-- //product left -->
             <!-- product right -->
-            <div class="col-lg-3 mt-lg-0 mt-4 p-lg-0">
+				<div class="col-lg-3 mt-lg-0 mt-4 p-lg-0">
 					<div class="side-bar p-sm-4 p-3">
 						<div class="search-hotel border-bottom py-2">
 							<h3 class="agileits-sear-head mb-3">Tìm Kiếm Ở Đây..</h3>
@@ -99,23 +99,21 @@
 							<div class="w3l-range">
 								<ul>
 									<li>
-										<a href="{{route('user.index')}}">Dưới 1 000 000 VNĐ</a>
-									</li>
-									<li class="my-1">
-										<a href="{{route('user.index')}}">$1,000 - $5,000</a>
+										<a href="{{route('user.index')}}">Trên 200,000</a>
 									</li>
 									<li>
-										<a href="{{route('user.index')}}">$5,000 - $10,000</a>
-									</li>
-									<li class="my-1">
-										<a href="{{route('user.index')}}">$10,000 - $20,000</a>
+										<a href="{{route('user.index')}}">100,000 - 200,000</a>
 									</li>
 									<li>
-										<a href="{{route('user.index')}}">$20,000 $30,000</a>
+										<a href="{{route('user.index')}}">80,000 - 100,000</a>
 									</li>
-									<li class="mt-1">
-										<a href="{{route('user.index')}}">Over $30,000</a>
+									<li class="my-1">
+										<a href="{{route('user.index')}}">50,000 - 80,000</a>
 									</li>
+									<li>
+										<a href="{{route('user.index')}}">20,000 - 50,000</a>
+									</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -136,98 +134,10 @@
 									<input type="checkbox" class="checked">
 									<span class="span">20% trở lên</span>
 								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">30% trở lên</span>
-								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">50% trở lên</span>
-								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">60% trở lên</span>
-								</li>
 							</ul>
 						</div>
 						<!-- //discounts -->
-						<!-- reviews -->
-						<div class="customer-rev border-bottom left-side py-2">
-							<h3 class="agileits-sear-head mb-3">Đánh giá của khách hàng</h3>
-							<ul>
-								<li>
-									<a href="{{route('user.index')}}">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<span>5.0</span>
-									</a>
-								</li>
-								<li>
-									<a href="{{route('user.index')}}">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<span>4.0</span>
-									</a>
-								</li>
-								<li>
-									<a href="{{route('user.index')}}">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star-half"></i>
-										<span>3.5</span>
-									</a>
-								</li>
-								<li>
-									<a href="{{route('user.index')}}">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<span>3.0</span>
-									</a>
-								</li>
-								<li>
-									<a href="{{route('user.index')}}">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star-half"></i>
-										<span>2.5</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- //reviews -->
-						<!-- electronics -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">Thiết bị điện tử</h3>
-							<ul>
-								
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Wearable Technology</span>
-								</li>
-							</ul>
-						</div>
-						<!-- //electronics -->
-						<!-- delivery -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">Thanh toán khi giao hàng</h3>
-							<ul>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Đủ điều kiện nhận tiền mặt khi giao hàng</span>
-								</li>
-							</ul>
-						</div>
-						<!-- //delivery -->
-						<!-- arrivals -->
-						
-						<!-- //arrivals -->
+
 						<!-- best seller -->
 						<div class="f-grid py-2">
 							<h3 class="agileits-sear-head mb-3">Bán Chạy</h3>
@@ -235,29 +145,38 @@
 								<div class="scroll">
 									<div class="row">
 										<div class="col-lg-3 col-sm-2 col-3 left-mar">
-											<img src="{!! asset('user/images/k1.jpg')!!}" alt="" class="img-fluid">
+											<img src="{!! asset('image/chck13.jpg')!!}" alt="" class="img-fluid">
 										</div>
 										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
-											<a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
-											<a href="" class="price-mar mt-2">3.500.000 VNĐ</a>
+											<a href="">Cupcake cookie</a>
+											<a href="" class="price-mar mt-2">25.000 VNĐ</a>
 										</div>
 									</div>
 									<div class="row my-4">
 										<div class="col-lg-3 col-sm-2 col-3 left-mar">
-											<img src="{!! asset('user/images/k2.jpg')!!}" alt="" class="img-fluid">
+											<img src="{!! asset('image/chck16.jpg')!!}" alt="" class="img-fluid">
 										</div>
 										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
-											<a href="">Haier 195 L 4 Star Direct-Cool Single Door Refrigerator</a>
-											<a href="" class="price-mar mt-2">12.499.000 VNĐ</a>
+											<a href="">Cupcake Vani</a>
+											<a href="" class="price-mar mt-2">15.000 VNĐ</a>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-lg-3 col-sm-2 col-3 left-mar">
-											<img src="{!! asset('user/images/k3.jpg')!!}" alt="" class="img-fluid">
+											<img src="{!! asset('image/dnut8.jpg')!!}" alt="" class="img-fluid">
 										</div>
 										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
-											<a href="">Ambrane 13000 mAh Power Bank (P-1310 Premium)</a>
-											<a href="" class="price-mar mt-2">11.199.000 VNĐ </a>
+											<a href="">Donut Cầu vồng</a>
+											<a href="" class="price-mar mt-2">30.000 VNĐ </a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3 col-sm-2 col-3 left-mar">
+											<img src="{!! asset('image/spck5.jpg')!!}" alt="" class="img-fluid">
+										</div>
+										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+											<a href="">Bánh Mousse vị cam</a>
+											<a href="" class="price-mar mt-2">25.000 VNĐ </a>
 										</div>
 									</div>
 								</div>

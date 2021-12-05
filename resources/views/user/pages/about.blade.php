@@ -10,7 +10,7 @@
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="{{URL::to('index')}}">TRANG CHỦ</a>
 						<i>|</i>
 					</li>
 					<li>Về Chúng Tôi</li>
@@ -31,14 +31,15 @@
 			<!-- //tittle heading -->
 			<div class="row">
 				<div class="col-lg-6 welcome-left">
-					<h3>Chào mừng</h3>
-					<h4 class="my-sm-3 my-2">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta erat sit amet eros sagittis, quis hendrerit
-						libero aliquam. Fusce semper augue ac dolor efficitur, a pretium metus pellentesque.</p>
+					<h3>Chào mừng đến với H Bakery</h3>
+					<h4 class="my-sm-3 my-2">Trải qua hơn 5 năm hình thành và phát triển,
+H Bakery đã liên tục gặt hái được rất nhiều thành công và không ngừng lớn mạnh.</h4>
+					<p>Niềm tự hào chúng tôi là thành công trong việc kết hợp những công nghệ hiện đại vào quy trình sản xuất để có thể đảm bảo sức khoẻ cho người dùng nhưng vẫn giữ được hương vị truyền thống của những chiếc bánh. H Bakery không ngừng nghiên cứu và cho ra đời nhiều loại sản phẩm bánh kẹo khác nhau để phù hợp với thị hiếu của tất cả khách hàng ở khắp mọi nơi.</p>
 				</div>
+				
 				<div class="col-lg-6 welcome-right-top mt-lg-0 mt-sm-5 mt-4">
-					<img src="images/ab.jpg" class="img-fluid" alt=" ">
+					
+					<img src="images/abc2.jpg" class="img-fluid" alt=" ">
 				</div>
 			</div>
 		</div>
@@ -46,19 +47,21 @@
 	<!-- //about -->
 
 	<!-- testimonials -->
-	<div class="testimonials py-sm-5 py-4">
+	<div class=" py-sm-5 py-4">
 		<div class="container py-xl-4 py-lg-2">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l text-center text-white mb-lg-5 mb-sm-4 mb-3">
-				<span>O</span>ur
-				<span>C</span>ustomers
-				<span>S</span>ays</h3>
+			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+				<span>Đ</span>ánh
+				<span>G</span>ía
+				<span>T</span>ừ
+				<span>K</span>hách
+				<span>H</span>àng
+			</h3>
 			<!-- tittle heading -->
 			<div class="row gallery-index">
 				<div class="col-sm-6 med-testi-grid">
 					<div class="med-testi test-tooltip rounded p-4">
-						<p>"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>"Bánh mềm, ngon, độ ngọt vừa phải. Thanks shop nhé!"</p>
 					</div>
 					<div class="row med-testi-left my-5">
 						<div class="col-lg-2 col-3 w3ls-med-testi-img">
@@ -72,8 +75,7 @@
 				</div>
 				<div class="col-sm-6 med-testi-grid">
 					<div class="med-testi test-tooltip rounded p-4">
-						<p>"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>"Tớ nhận được bánh rồi. Ngon lắm. Cảm ơn ạ!"</p>
 					</div>
 					<div class="row med-testi-left my-5">
 						<div class="col-lg-2 col-3 w3ls-med-testi-img">
@@ -87,8 +89,7 @@
 				</div>
 				<div class="col-sm-6 med-testi-grid">
 					<div class="med-testi test-tooltip rounded p-4">
-						<p>"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>"Bánh mở ra rất xinh nhé. Ăn ngon vừa miệng"</p>
 					</div>
 					<div class="row med-testi-left mt-sm-5 my-5">
 						<div class="col-lg-2 col-3 w3ls-med-testi-img">
@@ -102,8 +103,7 @@
 				</div>
 				<div class="col-sm-6 med-testi-grid">
 					<div class="med-testi test-tooltip rounded p-4">
-						<p>"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>"Cả nhà ăn ai cũng khen bánh ngon lại xinh nữa."</p>
 					</div>
 					<div class="row med-testi-left mt-5">
 						<div class="col-lg-2 col-3 w3ls-med-testi-img">

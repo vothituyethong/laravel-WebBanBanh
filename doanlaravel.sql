@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 05, 2021 lúc 01:54 PM
+-- Thời gian đã tạo: Th12 05, 2021 lúc 06:01 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -225,23 +225,23 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`id`, `TenSP`, `Gia`, `GiaMoi`, `Image`, `Size`, `SoLuong`, `Mota`, `TrangThai`, `created_at`, `updated_at`, `MaLoai`, `DanhMuc`) VALUES
-(1, 'Bánh phô mát dâu', 75000, 65000, 'chck3.jpg', 'tam giác - 7cm*12cm', 100, 'Nhấm nháp mẩu bánh phô mát dâu tây bạn sẽ cảm nhận trọn vẹn mùi vị chua ngọt đặc trưng của loại quả này và đặc biệt hơn khi nó đi kèm với vị béo của phô mát.', 1, '2021-10-30 07:21:06', '2021-12-05 03:36:29', 1, 1),
-(2, 'Bánh phô mát sô-cô-la', 500000, 450000, 'chck9.jpg', '32cm*5cm', 100, 'Màu sắc trang trọng, vẻ bóng bẩy của sô cô la, cùng những họa tiết đặc sắc từ bàn tay khéo léo của người thợ bánh khiến chiếc bánh trở thành món quà lịch thiệp nhất để gửi tặng bạn bè vào những dịp đặc biệt', 1, '2021-10-30 07:24:30', '2021-10-30 07:24:30', 2, 2),
+(1, 'Bánh phô mát dâu', 75000, 65000, 'chck3.jpg', 'tam giác - 7cm*12cm', 100, 'Nhấm nháp mẩu bánh phô mát dâu tây bạn sẽ cảm nhận trọn vẹn mùi vị chua ngọt đặc trưng của loại quả này và đặc biệt hơn khi nó đi kèm với vị béo của phô mát.', 1, '2021-10-30 07:21:06', '2021-12-05 08:08:07', 1, 1),
+(2, 'Bánh phô mát sô-cô-la', 500000, 450000, 'chck9.jpg', '32cm*5cm', 100, 'Màu sắc trang trọng, vẻ bóng bẩy của sô cô la, cùng những họa tiết đặc sắc từ bàn tay khéo léo của người thợ bánh khiến chiếc bánh trở thành món quà lịch thiệp nhất để gửi tặng bạn bè vào những dịp đặc biệt', 1, '2021-10-30 07:24:30', '2021-10-30 07:24:30', 1, 1),
 (3, 'Bánh phô mát mận', 70000, 60000, 'chck6.jpg', 'tam giác 7cm*12cm', 10, 'Chiếc bánh phô mát đi kèm với mùi mứt mận chua ngọt', 1, '2021-10-30 07:26:34', '2021-10-30 07:26:34', 1, 1),
 (4, 'Bánh phô mát hương mâm xôi', 80000, 75000, 'chck7.jpg', 'tam giác - 7cm*12cm', 10, 'Những quả mâm xôi chín mọng căng đều tô điểm cho chiếc bánh phô mát thêm phầm hấp dẫn', 1, '2021-10-30 07:28:30', '2021-10-30 07:28:30', 1, 1),
-(5, 'Cupcake cream', 25000, 20000, 'chck12.jpg', 'Medium - 4cm', 10, 'Ngọt ngào hương vị bánh sô-cô-la hòa quyện với vị kem tươi ngọt ngào', 1, '2021-10-30 07:30:34', '2021-10-30 07:30:34', 3, 1),
-(6, 'Cupcake cookie', 30000, 25000, 'chck13.jpg', 'Medium - 4cm', 10, 'Chiếc bánh cupcake được đính kèm thêm một chiếc cookie nhỏ xinh.', 1, '2021-10-30 07:32:29', '2021-10-30 07:52:37', 3, 3),
-(7, 'Cupcake dâu tây', 25000, 20000, 'chck14.jpg', 'Medium - 4cm', 10, 'Mùi vị thơm ngon của chiếc bánh cupcake thông thường được nâng lên bởi vị chua thanh khiết của những quả dâu tây chín mọng', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 1),
-(8, 'Cupcake hoa hồng', 30000, 25000, 'chck15.jpg', 'Medium - 4cm', 10, 'Mang dáng vẻ của những nụ hồng chúm chím dễ thương, chiếc bánh cupcake hoa hồng sẽ thay những lời ngọt ngào mà bạn trăm ngàn lần muốn nói', 1, '2021-11-04 03:55:20', '2021-11-04 03:55:20', 3, 3),
-(9, 'Cupcake Vani', 20000, 15000, 'chck16.jpg', 'Medium - 4cm', 10, 'Màu trắng tinh khôi đi kèm với hương vị đặc trưng cau vanilla mang đến cảm giác ngon miệng cho bạn và gia đình', 1, '2021-11-04 03:57:51', '2021-11-04 03:57:51', 3, 3),
-(10, 'Donut sô-cô-la đậu phộng', 20000, 15000, 'chck8.jpg', 'Regular 3\'\'', 10, 'Lớp hạt đạu phộng trên bề mặt chiếc bánh donut gây một cảm giác không thể chối từ ngay cả đối với người xem ảnh', 1, '2021-11-04 03:59:00', '2021-11-04 03:59:00', 4, 1),
+(5, 'Cupcake cream', 25000, 20000, 'cpck6.jpg', 'Medium - 4cm', 10, 'Ngọt ngào hương vị bánh sô-cô-la hòa quyện với vị kem tươi ngọt ngào', 1, '2021-10-30 07:30:34', '2021-10-30 07:30:34', 3, 1),
+(6, 'Cupcake cookie', 30000, 25000, 'cpck2.jpg', 'Medium - 4cm', 10, 'Chiếc bánh cupcake được đính kèm thêm một chiếc cookie nhỏ xinh.', 1, '2021-10-30 07:32:29', '2021-10-30 07:52:37', 3, 3),
+(7, 'Cupcake dâu tây', 25000, 20000, 'cpck4.jpg', 'Medium - 4cm', 10, 'Mùi vị thơm ngon của chiếc bánh cupcake thông thường được nâng lên bởi vị chua thanh khiết của những quả dâu tây chín mọng', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 1),
+(8, 'Cupcake hoa hồng', 30000, 25000, 'cpck13.jpg', 'Medium - 4cm', 10, 'Mang dáng vẻ của những nụ hồng chúm chím dễ thương, chiếc bánh cupcake hoa hồng sẽ thay những lời ngọt ngào mà bạn trăm ngàn lần muốn nói', 1, '2021-11-04 03:55:20', '2021-11-04 03:55:20', 3, 3),
+(9, 'Cupcake Vani', 20000, 15000, 'cpck17.jpg', 'Medium - 4cm', 10, 'Màu trắng tinh khôi đi kèm với hương vị đặc trưng cau vanilla mang đến cảm giác ngon miệng cho bạn và gia đình', 1, '2021-11-04 03:57:51', '2021-11-04 03:57:51', 3, 3),
+(10, 'Donut sô-cô-la đậu phộng', 20000, 15000, 'dnut4.jpg', 'Regular 3\'\'', 10, 'Lớp hạt đạu phộng trên bề mặt chiếc bánh donut gây một cảm giác không thể chối từ ngay cả đối với người xem ảnh', 1, '2021-11-04 03:59:00', '2021-11-04 03:59:00', 4, 1),
 (11, 'Donut giòn', 30000, 25000, 'dnut3.jpg', 'regular 3\'\'', 10, 'Chiếc bánh donut được nướng giòn thơm ngon, sé thật thú vị khi bạn vừa nhâm nhi trà nóng vừa thưởng thức chiếc bánh này.', 1, '2021-11-04 04:00:06', '2021-11-04 04:00:06', 4, 3),
-(12, 'Donut Sô-cô-la', 25000, 20000, 'chck6.jpg', 'Regular - 3\'\'', 10, 'Bánh Donut mềm mịn cùng lớp sô-cô-la óng ánh.', 1, '2021-11-04 04:01:30', '2021-11-04 04:01:30', 4, 3),
-(13, 'Donut kẹo đường', 25000, 20000, 'chck10.jpg', 'Regular 3\'\'', 10, 'Mới nghe tên tưởng \"kẹo đồng\" chứ.. thôi, kẹo đường ăn cũng được', 1, '2021-11-04 03:53:20', '2021-11-04 03:55:40', 4, 1),
-(14, 'Donut việt quất', 30000, 25000, 'chck17.jpg', 'Regular 3\'\'', 10, 'Chiếc bánh được trang trí bởi những trái blueberry mọng nước', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 2),
-(15, 'Gato kem dâu tây', 300000, 280000, 'chck5.jpg', '32cm*5cm', 10, 'Vị chua thanh của chanh hòa với vị béo của kem tươi khiến ai đã từng nếm thử một lần cứ có cảm giác vương vấn mãi trên đầu môi chót lưỡi :))', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
+(12, 'Donut Sô-cô-la', 25000, 20000, 'dnut19.jpg', 'Regular - 3\'\'', 10, 'Bánh Donut mềm mịn cùng lớp sô-cô-la óng ánh.', 1, '2021-11-04 04:01:30', '2021-11-04 04:01:30', 4, 3),
+(13, 'Donut kẹo đường', 25000, 20000, 'dnut13.jpg', 'Regular 3\'\'', 10, 'Mới nghe tên tưởng \"kẹo đồng\" chứ.. thôi, kẹo đường ăn cũng được', 1, '2021-11-04 03:53:20', '2021-11-04 03:55:40', 4, 1),
+(14, 'Donut việt quất', 30000, 25000, 'dnut11.jpg', 'Regular 3\'\'', 10, 'Chiếc bánh được trang trí bởi những trái blueberry mọng nước', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 2),
+(15, 'Gato kem dâu tây', 300000, 280000, 'chck16.jpg', '32cm*5cm', 10, 'Vị chua thanh của chanh hòa với vị béo của kem tươi khiến ai đã từng nếm thử một lần cứ có cảm giác vương vấn mãi trên đầu môi chót lưỡi :))', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
 (16, 'Gato bơ hạnh nhân', 350000, 340000, 'lzck88.jpg', '32cm*5cm', 10, 'Bánh mang hương vị béo ngậy của bơ hòa quyện cùng vị thơm ngọt bùi của hạnh nhân.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
-(17, 'Gato Sô-cô-la', 350000, 330000, 'chck3.jpg', '32cm*5cm', 10, 'Bánh gato mịn màng cùng vị đắng nhẹ của sô-cô-la', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
+(17, 'Gato Sô-cô-la', 350000, 330000, 'chck5.jpg', '32cm*5cm', 10, 'Bánh gato mịn màng cùng vị đắng nhẹ của sô-cô-la', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
 (18, 'Bánh Waffle trái cây', 400000, 390000, 'chck4.jpg', '32cm*5cm', 10, 'Chiếc bánh nhiều lớp bánh waffle được nướng lên, bên trên là trái cây tươi ngon hấp dẫn.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
 (19, 'Gato lúa mạch', 420000, 400000, 'lzck12.jpg', '32cm*5cm', 10, 'Hương vị lúa mạch  làm cho chiếc bánh thật hấp dẫn.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 1),
 (20, 'Gato chuối', 380000, 350000, 'lzck14.jpg', '32cm*5cm', 9, 'Bánh đi kèm với chuối ngọt lịm và thơm ngát.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 3),
@@ -254,13 +254,13 @@ INSERT INTO `sanpham` (`id`, `TenSP`, `Gia`, `GiaMoi`, `Image`, `Size`, `SoLuong
 (28, 'Bánh Kiwi', 40000, 35000, 'cpck34.png', 'chữ nhật - 5cm*10cm', 9, 'Vị thanh mát ngon và độc lạ của kiwi.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 1, 3),
 (29, 'Bánh sô-cô-la nhiều lớp', 40000, 35000, 'cpck31.jpg', 'chữ nhật 5cm*10cm', 9, 'Kết hợp nhiều sô-cô-la khác nhau mang đến nhiều trải nghiệm hương vị khác nhau cho người dùng yêu thích sô-cô-la', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 1, 1),
 (30, 'Cupcake cam', 25000, 20000, 'cpck12.jpg', 'Medium 4cm', 8, 'Chiếc bánh được trang trí bằng lát cam trông rất bắt mắt.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 2),
-(31, 'Cupcake dễ thương', 35000, 30000, 'cpck20.jpg', 'Medium 4cm', 8, 'Chiếc bánh được trang trí dễ thương, sẽ là phần quà thích hợp cho bạn bè trong những dịp tiệc tùng.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 2),
+(31, 'Cupcake dễ thương', 35000, 30000, 'cpck18.jpg', 'Medium 4cm', 8, 'Chiếc bánh được trang trí dễ thương, sẽ là phần quà thích hợp cho bạn bè trong những dịp tiệc tùng.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 2),
 (32, 'Cupcake hoa tuyết', 30000, 25000, 'cpck16.jpg', 'Medium 4cm', 8, 'Họa tiết hoa tuyết đem lại vẻ lung linh cho chiếc bánh.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 1),
-(33, 'Cupcake sô-cô-la', 25000, 20000, 'chck11.jpg', 'Medium 4cm', 10, 'Hương vị sô-cô-la đậm đà khó phai mờ.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 3),
+(33, 'Cupcake sô-cô-la', 25000, 20000, 'cpck20.jpg', 'Medium 4cm', 10, 'Hương vị sô-cô-la đậm đà khó phai mờ.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 3, 3),
 (34, 'Bánh Red Velvet', 35000, 30000, 'spck31.jpg', 'chữ nhật 5cm*10cm', 8, 'Red velvet là loại bánh chocolate nhiều lớp có màu đỏ, nâu đỏ, đỏ thẫm hoặc đỏ tươi, chia lớp bởi lớp kem phủ bằng cream cheese hoặc ermine trắng.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 1, 1),
-(35, 'Donut sô-cô-la hạnh nhân', 30000, 25000, 'chck18.jpg', 'Regular 3\'\'', 8, 'Bánh Donut với lớp sô-cô-la chảy cùng những hạt hạnh nhân béo ngậy.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 3),
+(35, 'Donut sô-cô-la hạnh nhân', 30000, 25000, 'dnut9.jpg', 'Regular 3\'\'', 8, 'Bánh Donut với lớp sô-cô-la chảy cùng những hạt hạnh nhân béo ngậy.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 3),
 (36, 'Bánh Mousse bí ngô', 25000, 20000, 'lzck33.jpg', 'tam giác 7cm*12cm', 9, 'Hương vị bánh hòa quyện với hương bí ngô tạo nên một mùi vị độc đáo hơn bao giờ hết.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 1, 2),
-(37, 'Donut sữa', 25000, 20000, 'dnut23.jpg', 'Regular 3\'\'', 9, 'Bánh donut kết hợp với sữa đặc thơm béo.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 2),
+(37, 'Donut sữa', 25000, 20000, 'dnut12.jpg', 'Regular 3\'\'', 9, 'Bánh donut kết hợp với sữa đặc thơm béo.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 2),
 (38, 'Carrot Cake', 450000, 440000, 'chck1.jpg', '20cm*15cm', 7, 'Bánh gato sô-cô-la trắng được decor xinh đẹp với những chiếc cà rốt rực rỡ xinh xắn.', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 2, 2),
 (40, 'Donut cầu vồng', 35000, 30000, 'dnut8.jpg', 'Regular 3\'\'', 7, 'Bánh donut với cốm cầu vồng trang trí đẹp mắt', 1, '2021-11-04 03:53:01', '2021-11-04 03:53:40', 4, 1);
 
